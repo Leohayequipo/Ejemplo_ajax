@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark" >
+		<a href="#" class="navbar-brand">Task App </a>
+		<ul class="navbar-nav ml-auto" > 
+			<form class="form-inline my-2 my-lg-0">
+				<input type="search" id="search" class="form-control mr-sm-2" name="" placeholder="busca tarea">
+				<button class="btn btn-success my-2 my-sm-0" type="submit">Buscar</button>
+			</form>
+
+		</ul>
+	</nav>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-5">
+				<div class="card-body">
+					<form id="task-form">
+						<div class="form-group">
+							<input type="text" name="" id="name" class="form-control" placeholder="Task name">
+						</div>
+						<div class="form-group">
+							<textarea name="" id="descripcion" class="form-control" cols="30" rows="10" placeholder="Task descripcion"></textarea>
+							
+						</div>
+						<button id="btnTasks" type="submit" class="btn btn-primary btn-block text-center">guardar</button>
+						
+					</form>
+					
+				</div>
+				
+			</div>
+			<div class="col-md-7">
+				<div class="card my-4" id="task-result">
+					<div class="card-body">
+						<ul id="container"></ul>
+					</div>
+				</div>
+				<table class="table table-bordered table-sm">
+					<thead>
+						<tr>
+							<td>Id</td>
+							<td>name</td>
+							<td>Sescripcion</td>
+
+						</tr>
+					</thead>
+					<tbody id="tasks">
+
+						
+					</tbody>
+				</table>
+				
+			</div>
+		</div>
+	</div>
+	<script  src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous"></script>
+	<script src="app.js">
+		
+	</script>
+</body>
+</html>
